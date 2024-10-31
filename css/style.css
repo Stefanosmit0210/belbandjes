@@ -1,0 +1,402 @@
+*{
+    margin: 0   !important;
+    padding: 0 auto !important;
+    color: var(--text-white) !important;
+   
+}
+/* fonts inladen */
+@font-face {
+    font-family: "codePro" !important;
+    src: url("fonts/Code_Pro_Bold_LC.otf") !important;
+  }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap'); 
+
+@media (max-width: 808px) {
+    /* your styles for screens smaller than or equal to md */
+    .left-header-flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: fit-content !important;
+    }
+}
+.left-header-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ /* font toewijzing  */
+button,h1 {
+    font-family: "codePro", sans-serif !important;
+    font-weight: 800 !important;
+}
+
+h2, h3, p, a, input, span, label, ul, li{
+    font-family: 'Roboto', sans-serif !important;
+}
+/* colors */
+:root{
+    --bg-dark-gray: #595959;
+    --text-white: #fff;
+    --text-green:#A8F04A ;
+}
+
+.tdn, .form-group input::placeholder, .form-group textarea::placeholder, .form-check-label {
+    color: var(--text-white) !important;
+}
+/* main implementation of general colors */
+body,main, header, .form-group select{
+    background: var(--bg-dark-gray) !important;
+    color: var(--text-white) !important;
+}
+/* header colors */
+label{
+    color: var(--text-green) !important;
+}
+h1{
+    color: var(--text-green) !important;
+    text-shadow: 2px 4px 5px #272727 !important;
+}
+
+/* font-sizes */
+.size-0{
+    font-size: 11px !important;
+}
+.size-1{
+    font-size: 14px !important;
+}
+.size-2{
+    font-size: 16,5px !important;
+}
+.size-3{
+    font-size: 18px !important;
+}
+
+.size-5{
+    font-size: 42px !important;
+}
+
+html{
+    height: 100vh !important;
+}
+body{
+    height: 99% !important;
+}
+main{
+    height: 100% !important;
+    
+}
+.step0, .succesMsg{
+    height: 80% !important;
+}
+#step0{
+    margin-top: 25em !important;
+}
+#step1{
+    margin-top: 8em !important;
+}
+#step2{
+    margin-top: 10em !important;
+}
+#wizard{
+    zoom: 0.95;
+    -moz-transform: scale(0.95);
+    transform: scale(0.95);
+}
+
+input[type="checkbox"]{
+    border-radius: 0px !important;
+    background: none !important;
+    border: 1px solid white !important;
+}
+input[type="checkbox"]:checked {
+    background: var(--text-green) !important;
+    background-image : url("../img/check-square.svg") !important;
+    background-size:cover !important;
+    background-repeat: no-repeat !important;
+    box-shadow: none !important;
+}
+input[type="checkbox"]:focus, input[type="radio"]:active{
+    box-shadow: none !important;
+}
+
+
+
+/* =================== header styling =========================== */
+.logo-wrapper img{
+    width: 100%;
+    padding-top: 20px;
+}
+.header-a{
+    margin-top: 5em !important;
+}
+.header-a a{
+    color: var(--text-white) !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    letter-spacing: 1px !important;
+}
+.tdn{
+    text-decoration: none;
+    list-style-type: none;
+}
+.header-spacing-r, .verticle-align-logo, .succesMsg{
+    vertical-align: middle;
+}
+
+header{
+    padding-top: 20px;
+    margin-bottom: 20px !important;
+}
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.between-border-r {
+    border-right: var(--text-white) 2px solid;
+    padding-right: 10px;
+}
+.between-border-l {
+    padding-left: 7px;
+}
+.pt-3{
+    margin-top: 76px;
+}
+.button{
+    padding: 5px 75px 5px 75px !important;;   
+    margin-top: 20px !important; 
+    background: var(--text-green) !important;
+    border: none !important;
+}
+.with-btn-step2{
+    margin-right: 10px !important;
+}
+.big-button{
+    font-size: 16px !important;
+    width: 100% !important;
+    padding: 10px 20px 10px 20px !important;
+    background: var(--text-green) !important;
+    border: none !important;
+}
+.play-button , .stop-button , .pauze-button {
+    background: var(--text-green) !important;
+    border: none !important;
+    padding: 5px 10px 5px 10px !important;
+    margin: 10px 0px 10px  0px !important;
+    width: 70px !important;
+    /* height: 100px !important; */
+}
+
+.wizard .record-button a, .wizard .stop-button a, .wizard  .play-button a{
+    margin: 10px !important;
+}
+
+/* ========================== main ===============================  */
+.center-wrapper{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column;
+}
+.inhert-heigt{
+    height: inherit !important;
+}
+.center-text{
+    text-align: center;
+    max-width: 75ch;
+}
+.bottom{
+    height: inherit;
+}
+/* ========================== stepper styles ======================== */
+.wizard > .steps > ul > li{
+    display: none !important;
+}
+.content, .wizard ul{
+    background: none !important;
+}
+.content{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.wizard .content{
+    position: static !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    min-width: 40% !important;
+}
+.wizard .actions{
+    display: none !important;
+}
+.wizard .content .body{
+    height: auto !important;
+    padding: 0px !important;
+    position:relative !important;
+}
+.wizard > .steps > ul > li{
+    position: static !important;
+}
+.current{
+    padding: 0%;
+}
+.error {
+    color:white !important;   
+}
+/* ========================== step 1: gegevens ====================== */
+.huisstyle-input{
+    background: none !important;
+    border-radius: 0% !important;
+    border-bottom: #A8F04A 1px solid !important;
+}
+#start_date, #start_time, #end_date, #eind_tijd{
+    background: none !important;
+    border-radius: 0% !important;
+    border-bottom: none !important;
+} 
+
+.huisstyle-input::placeholder{
+    color: var(--text-white) !important;
+    padding-left: 0px !important;
+}
+.step1 > .row {
+    width: 100% !important;
+}
+
+.form-group{
+    margin-bottom: 15px !important;
+}
+
+.form-group label{
+    font-weight: 600 !important;
+}
+.form-group input{
+    padding: 2px 0px !important;
+}
+.datetime-spacing{
+    margin-right: 10px !important;
+}
+
+.form-check-label{
+    padding-right: 10px;
+}
+.form-control, .form-check-input{
+    padding-left: 0px !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+}
+.form-control:focus{
+    box-shadow: none !important;
+}
+/* selected overig display styling  */
+#form-group-input-purpuse{
+    display: none ;
+}
+#dynamicMenu{
+    display: none ;
+}
+/* checkboxes */
+.form-check{
+    padding: 0px !important;
+    margin-right: 5px;
+}
+.form-group input[type="date"]::-webkit-calendar-picker-indicator,
+.form-group input[type="time"]::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* Invert the icon color to white */
+}
+
+/* ========================== step 2: audio recorder ====================== */
+.control-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between !important;
+}
+
+.recorder-icon-wrapper{
+    scale: 5;
+    width: max-content;
+}
+#finish-button{
+    margin: none !important;
+}
+.button-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.button-wrapper > #stop {
+    margin-right: 20px !important;
+    margin-left: 20px !important;
+}
+.button-wrapper > #reload-button{
+    margin-right: 10px;
+}   
+.button-wrapper > #finish-button{
+    margin-left: 10px;
+}
+/* ========================== mini basje ============================ */
+/* position van mr mini basje */
+body > .minibasje{
+    float: left;
+    left: auto !important;
+    margin-right: 87px !important; ;
+}
+/* sizing */
+.minibasje{
+    height: 300px;
+    float: inline-end;
+    /* position at the bottom  */
+    position: fixed;
+    bottom: 0px;
+    
+}
+/* ========================= step 2: audio controls ========================= */
+.stick-to-bottom{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+.recorder-wrapper{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.audio-control{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.audio-control audio{
+    width: 90% !important;
+   	
+    margin-bottom: 20px !important;
+}
+.audio-button, a .audio-button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff; border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.audio-button:hover {
+    background-color: #0056b3;
+}
+div { 
+    margin-top: 20px;
+}
+
+/* ========================= validation styling ========================= */
+
+.invalid-feedback {
+    color: red;
+    font-style: italic;
+}

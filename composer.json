@@ -1,0 +1,6 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.8",
+        "php-ffmpeg/php-ffmpeg": "^1.1"
+    }
+}
